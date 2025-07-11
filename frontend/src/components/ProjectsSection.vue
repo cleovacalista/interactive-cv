@@ -40,3 +40,5 @@ Detail &rarr;</a>
 </div>
 </section>
 </template>
+
+import { projects } from '/backend/data.js';

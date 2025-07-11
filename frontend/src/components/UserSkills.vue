@@ -23,3 +23,5 @@ p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-t
 </div>
 </section>
 </template>
+
+import { skills } from '/backend/data.js';

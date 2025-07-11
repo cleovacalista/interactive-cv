@@ -3,7 +3,7 @@
 
 <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
 
-<div class="text-2xl font-bold text-purple-900">Cleova Calista</div>
+<div class="text-2xl font-bold text-purple-900">clecalazkay</div>
 <ul class="flex space-x-6">
 <li><a href="#profil" class="text-purple-600 hover:text-purple -500
 

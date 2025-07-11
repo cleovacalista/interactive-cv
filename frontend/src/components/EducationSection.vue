@@ -33,3 +33,5 @@ const educationHistory = [
 </div>
 </section>
 </template>
+
+import { educationHistory } from '/backend/data.js';
