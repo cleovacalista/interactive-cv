@@ -1,11 +1,11 @@
 <script setup>
 import SectionTitle from './SectionTitle.vue';
 const skills = [
-{ name: 'Vue.js', level: 'Mahir' },
-{ name: 'JavaScript', level:'Mahir' },
-{ name: 'Tailwind CSS', level: 'Mahir' },
+{ name: 'Vue.js', level: 'Menengah' },
+{ name: 'JavaScript', level:'Menengah' },
+{ name: 'Tailwind CSS', level: 'Menengah' },
 { name: 'Node.js', level:'Menengah' },
-{ name: 'Git & GitHub', level: 'Mahir' },
+{ name: 'Git & GitHub', level: 'Menengah' },
 ];
 </script>
 <template>
@@ -25,3 +25,12 @@ p-6 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-t
 </template>
 
 import { skills } from '/backend/data.js';
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+import SectionTitle from './SectionTitle.vue';
+const skills = ref([]);
+onMounted(async () => {
+try { const response = await
+axios.get('http://localhost:3000/api/skills'); skills.value =
+response.data; } catch (error) { console.error(error); }
+});

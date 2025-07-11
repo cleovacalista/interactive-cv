@@ -6,7 +6,7 @@ const educationHistory = [
 { id: 2, period: '2012 - 2015', institution: 'SD Negeri 007 Samarinda Seberang', major: 'Kelas 1 semester 2 - Kelas 5 semester 2' },
 { id: 3, period: '2015 - 2016', institution: 'SD Mangkukusuman 5 Tegal', major: 'Kelas 6 semester 1' },
 { id: 4, period: '2016 - 2017', institution: 'SD Negeri Manyaran 03 Semarang', major: 'Kelas 6 semester 2' },
-{ id: 5, period: '2017 - 2020', institution: 'SMP IT Insan Cendekia Semarang', major: '-' },
+{ id: 5, period: '2017 - 2020', institution: 'SMP IT Insan Cendekia Semarang', major: '' },
 { id: 6, period: '2020 - 2022', institution: 'SMA Wachid Hasyim 3 Sedati', major: 'MIPA' },
 { id: 7, period: '2022 - 2023', institution: 'SMA Maarif Yogyakarta', major: 'IPS' }
 ];
@@ -35,3 +35,13 @@ const educationHistory = [
 </template>
 
 import { educationHistory } from '/backend/data.js';
+import { ref, onMounted } from 'vue';
+import axios from 'axios';
+import SectionTitle from './SectionTitle.vue';
+const educationHistory = ref([]);
+onMounted(async () => {
+try { const response = await
+axios.get('http://localhost:3000/api/education');
+educationHistory.value = response.data; } catch (error) {
+console.error(error); }
+});
