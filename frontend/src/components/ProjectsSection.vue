@@ -3,7 +3,7 @@ import SectionTitle from './SectionTitle.vue';
 const projects = [
 { title: 'Website Toko Online', image:
 'https://via.placeholder.com/500x300?text=Proyek+1', description:
-'Platform e-commerce dengan fitur keranjang belanja.', tech: ['Vue.js',
+'Platform E-Commerce dengan fitur keranjang belanja.', tech: ['Vue.js',
 'Express.js', 'PostgreSQL'], link: '#' },
 { title: 'Aplikasi Manajemen Tugas', image:
 'https://via.placeholder.com/500x300?text=Proyek+2', description:
