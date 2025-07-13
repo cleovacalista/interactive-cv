@@ -7,8 +7,7 @@ dan profesional! Dalam seri tutorial ini, kita akan membangun sebuah website one
 elegan dari awal.
 
 # Tujuan Akhir
-Sebuah website profil pribadi dengan navigasi mulus ke bagian: Profil, Pendidikan, Skill, Pengalaman, Proyek, dan Kontak/Media Sosial. Website ini akan memiliki
-animasi yang halus, desain yang bersih, dan sepenuhnya responsif.
+Sebuah website profil pribadi dengan navigasi mulus ke bagian: Profil, Pendidikan, Skill, Pengalaman, Proyek, dan Kontak/Media Sosial. Website ini akan memiliki animasi yang halus dan sepenuhnya responsif.
 
 # Teknologi yang Saya Gunakan:
 • Editor Kode: Visual Studio Code (VS Code)
